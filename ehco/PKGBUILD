@@ -1,0 +1,44 @@
+# Maintainer: Josiauh
+pkgname=ehco
+pkgver=1.0.0
+pkgrel=1
+epoch=
+pkgdesc="bro really misspelled echo"
+arch=("x86_64")
+url="https://josiauh.com"
+license=('unknown')
+groups=()
+depends=()
+makedepends=()
+checkdepends=()
+optdepends=()
+provides=()
+conflicts=()
+replaces=()
+backup=()
+options=()
+install=
+changelog=
+source=("$pkgname-src.tar.gz")
+noextract=()
+sha256sums=("62235ba7edf141437092136251cef2fd6bcad205f74b9abba5ad2c796a66b60a")
+validpgpkeys=()
+
+prepare() {
+	cd "$pkgname-src"
+
+}
+
+build() {
+	cd "$pkgname-src"
+	pwd
+	make
+}
+
+
+package() {
+	cd "$pkgname-src"
+	mkdir "$pkgdir/usr/"
+	mkdir "$pkgdir/usr/bin/"
+	make DESTDIR="$pkgdir/usr/bin/" install
+}
