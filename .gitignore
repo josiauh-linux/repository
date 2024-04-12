@@ -3,3 +3,4 @@ md
 !*-src.tar*
 pkg
 src
+*.pkg.tar.zst
