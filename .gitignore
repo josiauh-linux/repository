@@ -1,0 +1,5 @@
+md
+*-src
+!*-src.tar*
+pkg
+src
