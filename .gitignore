@@ -4,3 +4,4 @@ md
 pkg
 src
 *.pkg.tar.zst
+!repo-files/*.pkg.tar.zst
