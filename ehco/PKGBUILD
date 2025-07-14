@@ -3,11 +3,12 @@ pkgname=ehco
 pkgver=1.0.0
 pkgrel=1
 epoch=
-pkgdesc="bro really misspelled echo"
+pkgdesc="Echo, but you misspelled it and now everything is jumbled!"
 arch=("x86_64")
 url="https://josiauh.com"
-license=('unknown')
+license=('MIT')
 groups=()
+# should only have the basic c library to build
 depends=()
 makedepends=()
 checkdepends=()
